@@ -1,0 +1,438 @@
+{
+  "name": "JLPT N5 (4 Months)",
+  "description": "If your goal is to pass the JLPT N5 in 4 months, this roadmap provides a daily schedule to get you there with 1.5–2 hours of daily study using Genki, Anki, and free resources.",
+  "category": "Language",
+  "difficulty": "medium",
+  "estimated_duration_weeks": 16,
+  "total_xp_available": 5000,
+  "phases": [
+    {
+      "title": "Month 1 (Days 1-30)",
+      "description": "Hiragana, Katakana, Basic Grammar, 250 words",
+      "milestones": [
+        {
+          "title": "Week 1",
+          "description": "Hiragana Mastery",
+          "modules": [
+            {
+              "title": "Day 1",
+              "description": "Hiragana A-K rows, 20 words, Greetings",
+              "tasks": [
+                {
+                  "title": "Review old vocabulary (Anki)",
+                  "type": "quiz",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Open your Anki application and complete all your due reviews for the day. \n\n**Tips:**\n- Don't skip days, as reviews pile up quickly!\n- Be honest when grading yourself (Again/Hard/Good/Easy).\n- Speak the words out loud to build muscle memory."
+                },
+                {
+                  "title": "Learn Hiragana A-K rows & 20 words",
+                  "type": "reading",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Time to study your characters! \n\n**Instructions:**\n1. Use a spaced-repetition app or physical flashcards.\n2. Practice writing them down on paper to memorize stroke order.\n3. Try to read small words using these characters.\n\n*Consistency is key to mastering the alphabets!*"
+                },
+                {
+                  "title": "Learn Greetings",
+                  "type": "custom",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "This task focuses on: **Learn Greetings**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                },
+                {
+                  "title": "Kanji (5 words)",
+                  "type": "assignment",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 10,
+                  "description": "Kanji is the backbone of Japanese reading. \n\n**Instructions:**\n- Learn the core meanings and the most common readings (Onyomi and Kunyomi).\n- Practice writing the character.\n- Study vocabulary words that use this Kanji in context.\n\nDon't try to memorize every single reading, focus on the vocabulary!"
+                }
+              ]
+            },
+            {
+              "title": "Day 2",
+              "description": "Hiragana S-T rows, 20 words",
+              "tasks": [
+                {
+                  "title": "Hiragana S-T rows",
+                  "type": "reading",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Time to study your characters! \n\n**Instructions:**\n1. Use a spaced-repetition app or physical flashcards.\n2. Practice writing them down on paper to memorize stroke order.\n3. Try to read small words using these characters.\n\n*Consistency is key to mastering the alphabets!*"
+                },
+                {
+                  "title": "20 words",
+                  "type": "quiz",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Expand your vocabulary by learning these new words. \n\n**Action Items:**\n- Add these words to your Anki deck if they aren't already there.\n- Listen to native audio for pronunciation.\n- Try writing one simple sentence for each word to solidify it in your memory."
+                }
+              ]
+            },
+            {
+              "title": "Day 3",
+              "description": "Hiragana N-H rows, 20 words",
+              "tasks": [
+                {
+                  "title": "Hiragana N-H rows",
+                  "type": "reading",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Time to study your characters! \n\n**Instructions:**\n1. Use a spaced-repetition app or physical flashcards.\n2. Practice writing them down on paper to memorize stroke order.\n3. Try to read small words using these characters.\n\n*Consistency is key to mastering the alphabets!*"
+                },
+                {
+                  "title": "20 words",
+                  "type": "quiz",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Expand your vocabulary by learning these new words. \n\n**Action Items:**\n- Add these words to your Anki deck if they aren't already there.\n- Listen to native audio for pronunciation.\n- Try writing one simple sentence for each word to solidify it in your memory."
+                }
+              ]
+            },
+            {
+              "title": "Day 4",
+              "description": "Hiragana M-Y-R-W rows, Dakuten",
+              "tasks": [
+                {
+                  "title": "Hiragana M-Y-R-W rows",
+                  "type": "reading",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Time to study your characters! \n\n**Instructions:**\n1. Use a spaced-repetition app or physical flashcards.\n2. Practice writing them down on paper to memorize stroke order.\n3. Try to read small words using these characters.\n\n*Consistency is key to mastering the alphabets!*"
+                },
+                {
+                  "title": "Dakuten",
+                  "type": "reading",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "This task focuses on: **Dakuten**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            },
+            {
+              "title": "Day 5",
+              "description": "Small ゃゅょ, Long vowels",
+              "tasks": [
+                {
+                  "title": "Small ゃゅょ",
+                  "type": "assignment",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "This task focuses on: **Small ゃゅょ**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                },
+                {
+                  "title": "Long vowels",
+                  "type": "custom",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "This task focuses on: **Long vowels**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            },
+            {
+              "title": "Day 6",
+              "description": "Hiragana reading practice",
+              "tasks": [
+                {
+                  "title": "Hiragana reading practice",
+                  "type": "reading",
+                  "estimated_time_minutes": 40,
+                  "xp_reward": 30,
+                  "description": "Time to study your characters! \n\n**Instructions:**\n1. Use a spaced-repetition app or physical flashcards.\n2. Practice writing them down on paper to memorize stroke order.\n3. Try to read small words using these characters.\n\n*Consistency is key to mastering the alphabets!*"
+                }
+              ]
+            },
+            {
+              "title": "Day 7",
+              "description": "Hiragana quiz",
+              "tasks": [
+                {
+                  "title": "Hiragana quiz",
+                  "type": "quiz",
+                  "estimated_time_minutes": 30,
+                  "xp_reward": 50,
+                  "description": "Time to study your characters! \n\n**Instructions:**\n1. Use a spaced-repetition app or physical flashcards.\n2. Practice writing them down on paper to memorize stroke order.\n3. Try to read small words using these characters.\n\n*Consistency is key to mastering the alphabets!*"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 2",
+          "description": "Katakana",
+          "modules": [
+            {
+              "title": "Daily Focus",
+              "description": "10 symbols, 20 vocab, Reading practice",
+              "tasks": [
+                {
+                  "title": "10 Katakana symbols",
+                  "type": "reading",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Time to study your characters! \n\n**Instructions:**\n1. Use a spaced-repetition app or physical flashcards.\n2. Practice writing them down on paper to memorize stroke order.\n3. Try to read small words using these characters.\n\n*Consistency is key to mastering the alphabets!*"
+                },
+                {
+                  "title": "20 vocab (Anki)",
+                  "type": "quiz",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Open your Anki application and complete all your due reviews for the day. \n\n**Tips:**\n- Don't skip days, as reviews pile up quickly!\n- Be honest when grading yourself (Again/Hard/Good/Easy).\n- Speak the words out loud to build muscle memory."
+                },
+                {
+                  "title": "Reading practice",
+                  "type": "reading",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "This task focuses on: **Reading practice**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            },
+            {
+              "title": "Day 14",
+              "description": "Complete Katakana test",
+              "tasks": [
+                {
+                  "title": "Katakana Test",
+                  "type": "quiz",
+                  "estimated_time_minutes": 30,
+                  "xp_reward": 50,
+                  "description": "Time to study your characters! \n\n**Instructions:**\n1. Use a spaced-repetition app or physical flashcards.\n2. Practice writing them down on paper to memorize stroke order.\n3. Try to read small words using these characters.\n\n*Consistency is key to mastering the alphabets!*"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 3",
+          "description": "Genki Lesson 1",
+          "modules": [
+            {
+              "title": "Daily Focus",
+              "description": "は, の, か, これ, あれ",
+              "tasks": [
+                {
+                  "title": "20 vocab (Anki)",
+                  "type": "quiz",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Open your Anki application and complete all your due reviews for the day. \n\n**Tips:**\n- Don't skip days, as reviews pile up quickly!\n- Be honest when grading yourself (Again/Hard/Good/Easy).\n- Speak the words out loud to build muscle memory."
+                },
+                {
+                  "title": "5 Kanji",
+                  "type": "assignment",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Kanji is the backbone of Japanese reading. \n\n**Instructions:**\n- Learn the core meanings and the most common readings (Onyomi and Kunyomi).\n- Practice writing the character.\n- Study vocabulary words that use this Kanji in context.\n\nDon't try to memorize every single reading, focus on the vocabulary!"
+                },
+                {
+                  "title": "Grammar (は, の, か, これ, あれ)",
+                  "type": "reading",
+                  "estimated_time_minutes": 40,
+                  "xp_reward": 30,
+                  "description": "Grammar builds the structure of your sentences. \n\n**Study Guide:**\n- Read the grammar explanation carefully in your textbook.\n- Review all example sentences.\n- Complete the corresponding workbook exercises.\n\n*Tip: Don't just read; try speaking the example sentences out loud!*"
+                },
+                {
+                  "title": "Practice dialogue",
+                  "type": "custom",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 20,
+                  "description": "This task focuses on: **Practice dialogue**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Week 4",
+          "description": "Genki Lesson 2",
+          "modules": [
+            {
+              "title": "Daily Focus",
+              "description": "これ, それ, あれ, Numbers, Time",
+              "tasks": [
+                {
+                  "title": "Vocabulary & Kanji",
+                  "type": "quiz",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "Kanji is the backbone of Japanese reading. \n\n**Instructions:**\n- Learn the core meanings and the most common readings (Onyomi and Kunyomi).\n- Practice writing the character.\n- Study vocabulary words that use this Kanji in context.\n\nDon't try to memorize every single reading, focus on the vocabulary!"
+                },
+                {
+                  "title": "Grammar (Numbers, Time)",
+                  "type": "reading",
+                  "estimated_time_minutes": 40,
+                  "xp_reward": 30,
+                  "description": "Grammar builds the structure of your sentences. \n\n**Study Guide:**\n- Read the grammar explanation carefully in your textbook.\n- Review all example sentences.\n- Complete the corresponding workbook exercises.\n\n*Tip: Don't just read; try speaking the example sentences out loud!*"
+                },
+                {
+                  "title": "Listening & Reading",
+                  "type": "video",
+                  "estimated_time_minutes": 40,
+                  "xp_reward": 30,
+                  "description": "This task focuses on: **Listening & Reading**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Month 2 (Days 31-60)",
+      "description": "Core N5 Grammar, 500 words, 60 Kanji",
+      "milestones": [
+        {
+          "title": "Lessons 3-6",
+          "description": "Verb forms, ます, て form, Particles",
+          "modules": [
+            {
+              "title": "Daily Focus",
+              "description": "NHK Easy Reading, Shadowing, 20 words, 3-4 Kanji",
+              "tasks": [
+                {
+                  "title": "20 words (Anki) & 3-4 Kanji",
+                  "type": "quiz",
+                  "estimated_time_minutes": 30,
+                  "xp_reward": 20,
+                  "description": "Open your Anki application and complete all your due reviews for the day. \n\n**Tips:**\n- Don't skip days, as reviews pile up quickly!\n- Be honest when grading yourself (Again/Hard/Good/Easy).\n- Speak the words out loud to build muscle memory."
+                },
+                {
+                  "title": "Grammar study",
+                  "type": "reading",
+                  "estimated_time_minutes": 40,
+                  "xp_reward": 30,
+                  "description": "Grammar builds the structure of your sentences. \n\n**Study Guide:**\n- Read the grammar explanation carefully in your textbook.\n- Review all example sentences.\n- Complete the corresponding workbook exercises.\n\n*Tip: Don't just read; try speaking the example sentences out loud!*"
+                },
+                {
+                  "title": "NHK Easy Reading",
+                  "type": "reading",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 15,
+                  "description": "This task focuses on: **NHK Easy Reading**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                },
+                {
+                  "title": "Shadow Genki dialogues",
+                  "type": "custom",
+                  "estimated_time_minutes": 15,
+                  "xp_reward": 15,
+                  "description": "This task focuses on: **Shadow Genki dialogues**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Month 3 (Days 61-90)",
+      "description": "Finish N5 Grammar, 800 words, 100 Kanji",
+      "milestones": [
+        {
+          "title": "Lessons 7-12",
+          "description": "Casual form, Past tense, Adjectives",
+          "modules": [
+            {
+              "title": "Daily Focus",
+              "description": "Write 5 sentences daily, 15-20 words, 2-3 Kanji",
+              "tasks": [
+                {
+                  "title": "15-20 words & 2-3 Kanji",
+                  "type": "quiz",
+                  "estimated_time_minutes": 30,
+                  "xp_reward": 20,
+                  "description": "Kanji is the backbone of Japanese reading. \n\n**Instructions:**\n- Learn the core meanings and the most common readings (Onyomi and Kunyomi).\n- Practice writing the character.\n- Study vocabulary words that use this Kanji in context.\n\nDon't try to memorize every single reading, focus on the vocabulary!"
+                },
+                {
+                  "title": "Grammar study",
+                  "type": "reading",
+                  "estimated_time_minutes": 40,
+                  "xp_reward": 30,
+                  "description": "Grammar builds the structure of your sentences. \n\n**Study Guide:**\n- Read the grammar explanation carefully in your textbook.\n- Review all example sentences.\n- Complete the corresponding workbook exercises.\n\n*Tip: Don't just read; try speaking the example sentences out loud!*"
+                },
+                {
+                  "title": "Reading & Listening",
+                  "type": "video",
+                  "estimated_time_minutes": 35,
+                  "xp_reward": 25,
+                  "description": "This task focuses on: **Reading & Listening**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                },
+                {
+                  "title": "Write 5 sentences",
+                  "type": "assignment",
+                  "estimated_time_minutes": 20,
+                  "xp_reward": 20,
+                  "description": "This task focuses on: **Write 5 sentences**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Month 4 (Days 91-120)",
+      "description": "Revision + Mock Tests + Weak Areas",
+      "milestones": [
+        {
+          "title": "Weekly Revision Cycle",
+          "description": "Grammar, Vocab, Kanji, Mock Tests",
+          "modules": [
+            {
+              "title": "Monday-Friday",
+              "description": "Revision and practice",
+              "tasks": [
+                {
+                  "title": "Grammar/Vocab/Kanji Revision",
+                  "type": "reading",
+                  "estimated_time_minutes": 60,
+                  "xp_reward": 40,
+                  "description": "Kanji is the backbone of Japanese reading. \n\n**Instructions:**\n- Learn the core meanings and the most common readings (Onyomi and Kunyomi).\n- Practice writing the character.\n- Study vocabulary words that use this Kanji in context.\n\nDon't try to memorize every single reading, focus on the vocabulary!"
+                },
+                {
+                  "title": "Reading/Listening practice",
+                  "type": "video",
+                  "estimated_time_minutes": 30,
+                  "xp_reward": 25,
+                  "description": "This task focuses on: **Reading/Listening practice**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                },
+                {
+                  "title": "Review Mistake notebook",
+                  "type": "assignment",
+                  "estimated_time_minutes": 15,
+                  "xp_reward": 15,
+                  "description": "This task focuses on: **Review Mistake notebook**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            },
+            {
+              "title": "Saturday",
+              "description": "Mini JLPT Test",
+              "tasks": [
+                {
+                  "title": "Mini JLPT N5 Test",
+                  "type": "quiz",
+                  "estimated_time_minutes": 60,
+                  "xp_reward": 100,
+                  "description": "This task focuses on: **Mini JLPT N5 Test**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            },
+            {
+              "title": "Sunday",
+              "description": "Full Revision",
+              "tasks": [
+                {
+                  "title": "Full Week Revision",
+                  "type": "reading",
+                  "estimated_time_minutes": 60,
+                  "xp_reward": 50,
+                  "description": "This task focuses on: **Full Week Revision**. \n\nTake your time to understand the concepts thoroughly. Make sure you have a quiet environment, take notes if necessary, and don't hesitate to review previous materials if you feel stuck. \n\nYou've got this! Keep pushing forward!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
