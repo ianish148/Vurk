@@ -44,7 +44,7 @@ export function OnboardingWizard({ userId, email }: { userId: string, email: str
   const [error, setError] = useState<string | null>(null)
 
   const { register, handleSubmit, trigger, formState: { errors } } = useForm<FormData>({
-    resolver: zodResolver(schema),
+    resolver: zodResolver(schema) as any,
     defaultValues: {
        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
     }

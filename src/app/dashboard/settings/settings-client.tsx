@@ -23,7 +23,7 @@ const settingsSchema = z.object({
   gemini_api_key: z.string().optional(),
   name: z.string().optional(),
   username: z.string().regex(/^[a-z0-9_]*$/, "Only lowercase letters, numbers, and underscores").optional(),
-  age: z.coerce.number().min(1, "Invalid age").optional().or(z.literal('')),
+  age: z.any().optional(),
   year_of_study: z.string().optional(),
   college: z.string().optional(),
   branch: z.string().optional(),

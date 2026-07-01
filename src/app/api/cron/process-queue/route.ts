@@ -15,6 +15,7 @@ export async function GET(request: Request) {
     .select(`
       id,
       user_task_id,
+      attempts,
       user_tasks (
         id,
         user_id,
@@ -39,8 +40,8 @@ export async function GET(request: Request) {
       // Mark as processing
       await supabase.from('ai_verification_jobs').update({ status: 'processing' }).eq('id', job.id)
 
-      const userTask = job.user_tasks
-      const roadmapTask = userTask.roadmap_tasks
+      const userTask: any = Array.isArray(job.user_tasks) ? job.user_tasks[0] : job.user_tasks
+      const roadmapTask: any = Array.isArray(userTask.roadmap_tasks) ? userTask.roadmap_tasks[0] : userTask.roadmap_tasks
       
       // Fetch User's Gemini API Key
       const { data: prefs } = await supabase

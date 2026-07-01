@@ -67,7 +67,7 @@ export async function importRoadmapJson(jsonString: string) {
               type: task.type || 'reading',
               difficulty: task.difficulty || 'easy',
               priority: task.priority || 'normal',
-              estimated_time_minutes: task.estimated_time_minutes || task.estimated_minutes || 15,
+              estimated_time_minutes: task.estimated_minutes || 15,
               xp_reward: task.xp_reward || 10,
               coin_reward: task.coin_reward || 0,
               submission_req: task.submission_requirement || 'none',
