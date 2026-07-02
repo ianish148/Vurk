@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { getRoadmaps } from '@/app/actions/roadmap-actions'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'

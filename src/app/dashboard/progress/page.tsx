@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { Activity, Construction } from 'lucide-react'
 
 export default function ProgressPage() {
