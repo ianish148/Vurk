@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
-import { updatePreferences } from '@/app/actions/settings-actions'
+import { updatePreferences, resetMyProgress } from '@/app/actions/settings-actions'
 import { generateTasks } from '@/app/actions/scheduler-actions'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -81,6 +81,20 @@ export function SettingsClient({
   const [showKey, setShowKey] = useState(false)
   const [schedulerLoading, setSchedulerLoading] = useState(false)
   const [streakLoading, setStreakLoading] = useState(false)
+  const [resetLoading, setResetLoading] = useState(false)
+
+  const handleResetProgress = async () => {
+    if (!confirm("Are you sure you want to reset your progress? This action cannot be undone.")) return
+    setResetLoading(true)
+    try {
+      await resetMyProgress(userId)
+      toast.success('Your progress has been reset.')
+    } catch (err: any) {
+      toast.error(err.message || 'Failed to reset progress.')
+    } finally {
+      setResetLoading(false)
+    }
+  }
 
   const handleRepairStreak = async () => {
     setStreakLoading(true)
@@ -336,11 +350,12 @@ export function SettingsClient({
           <p className="text-sm text-muted-foreground">
             Destructive actions for testing accounts. These cannot be undone.
           </p>
-          <Button type="button" variant="destructive">
+          <Button type="button" variant="destructive" onClick={handleResetProgress} disabled={resetLoading}>
+            {resetLoading ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}
             Reset My Progress
           </Button>
           <p className="text-xs text-muted-foreground">
-            Deletes all user_tasks, subscriptions, and resets XP.
+            Deletes my user_tasks, subscriptions, and resets XP.
           </p>
         </div>
       </form>

@@ -43,3 +43,33 @@ export async function updatePreferences(userId: string, data: {
 
   revalidatePath('/', 'layout')
 }
+
+export async function resetMyProgress(userId: string) {
+  const supabase = await createClient()
+
+  // Delete all user_tasks for the user
+  const { error: tasksError } = await supabase
+    .from('user_tasks')
+    .delete()
+    .eq('user_id', userId)
+
+  if (tasksError) throw new Error(tasksError.message)
+
+  // Delete all subscriptions (user_roadmaps) for the user
+  const { error: subsError } = await supabase
+    .from('user_roadmaps')
+    .delete()
+    .eq('user_id', userId)
+
+  if (subsError) throw new Error(subsError.message)
+
+  // Reset XP
+  const { error: profileError } = await supabase
+    .from('profiles')
+    .update({ total_xp: 0 })
+    .eq('id', userId)
+
+  if (profileError) throw new Error(profileError.message)
+
+  revalidatePath('/', 'layout')
+}

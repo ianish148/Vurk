@@ -258,7 +258,7 @@ export default async function DashboardPage() {
                         {u.username || 'anon'} {isMe && '(You)'}
                       </p>
                     </div>
-                    <span className="text-[10px] font-bold text-muted-foreground">{u.xp} XP</span>
+                    <span className="text-[10px] font-bold text-muted-foreground">{u.total_xp} XP</span>
                   </div>
                 )
               })}

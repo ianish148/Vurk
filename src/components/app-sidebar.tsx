@@ -22,7 +22,6 @@ const items = [
   { title: "Dashboard", url: "/dashboard", icon: Home },
   { title: "Roadmaps", url: "/dashboard/roadmaps", icon: Map },
   { title: "Tasks", url: "/dashboard/tasks", icon: CheckSquare },
-  { title: "Submissions", url: "/dashboard/submissions", icon: FileText },
   { title: "Progress", url: "/dashboard/progress", icon: Activity },
   { title: "Leaderboard", url: "/dashboard/leaderboard", icon: Trophy },
   { title: "Resources", url: "/dashboard/notes", icon: FileEdit },
