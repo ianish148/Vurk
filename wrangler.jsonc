@@ -6,6 +6,10 @@
     {
       "pattern": "vurk.in",
       "custom_domain": true
+    },
+    {
+      "pattern": "www.vurk.in",
+      "custom_domain": true
     }
   ],
   "compatibility_date": "2024-12-30",
