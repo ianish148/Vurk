@@ -2,6 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "vurk",
   "main": ".open-next/worker.js",
+  "routes": [
+    {
+      "pattern": "vurk.in",
+      "custom_domain": true
+    }
+  ],
   "compatibility_date": "2024-12-30",
   "compatibility_flags": [
     "nodejs_compat"
