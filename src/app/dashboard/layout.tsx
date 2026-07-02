@@ -33,7 +33,7 @@ export default async function DashboardLayout({
         <div className="flex h-14 items-center border-b px-4">
           <SidebarTrigger />
         </div>
-        <div className="p-6 overflow-y-auto max-h-[calc(100vh-3.5rem)]">
+        <div className="p-4 md:p-6 overflow-y-auto max-h-[calc(100vh-3.5rem)]">
             {children}
         </div>
       </main>

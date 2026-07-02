@@ -39,7 +39,7 @@ export default async function TaskDetailPage({ params }: { params: Promise<{ id:
   return (
     <div className="space-y-6 max-w-4xl">
       <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <Badge className="capitalize">{ut.status.replace('_', ' ')}</Badge>
           <Badge variant="outline">{task.difficulty}</Badge>
           {task.requires_ai_verification && (
@@ -49,7 +49,7 @@ export default async function TaskDetailPage({ params }: { params: Promise<{ id:
           )}
         </div>
         <h1 className="text-3xl font-bold tracking-tight mt-2">{task.title}</h1>
-        <div className="flex items-center gap-4 text-sm text-muted-foreground mt-2">
+        <div className="flex items-center gap-4 text-sm text-muted-foreground mt-2 flex-wrap">
           <span className="flex items-center"><Clock className="h-4 w-4 mr-1"/> {task.estimated_time_minutes} min</span>
           <span className="flex items-center text-yellow-500"><Trophy className="h-4 w-4 mr-1"/> {task.xp_reward} XP</span>
           {task.coin_reward > 0 && (

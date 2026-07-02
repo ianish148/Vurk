@@ -26,7 +26,7 @@ export default async function SettingsPage() {
   const isAdmin = user.email === ADMIN_EMAIL
 
   return (
-    <div className="flex-1 p-6 max-w-3xl mx-auto w-full space-y-6">
+    <div className="flex-1 p-4 sm:p-6 max-w-3xl mx-auto w-full space-y-6">
       <div className="flex items-center gap-3">
         <Settings className="h-7 w-7 text-primary" />
         <div>

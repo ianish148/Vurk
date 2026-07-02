@@ -2,7 +2,7 @@ import { Activity, Construction } from 'lucide-react'
 
 export default function ProgressPage() {
   return (
-    <div className="flex-1 p-6 max-w-4xl mx-auto w-full space-y-8">
+    <div className="flex-1 p-4 sm:p-6 max-w-4xl mx-auto w-full space-y-8">
       <div className="flex items-center gap-3 mb-8">
         <Activity className="h-8 w-8 text-primary" />
         <div>

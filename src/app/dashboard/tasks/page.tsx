@@ -12,7 +12,7 @@ export default async function TasksPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Tasks</h1>
           <p className="text-muted-foreground mt-2">
@@ -35,7 +35,7 @@ export default async function TasksPage() {
               <div className="text-muted-foreground">No tasks scheduled for today.</div>
             )}
             {todaysTasks?.map((ut: any) => (
-              <div key={ut.id} className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0">
+              <div key={ut.id} className="flex flex-col sm:flex-row sm:items-center justify-between border-b pb-4 last:border-0 last:pb-0 gap-4">
                 <div>
                   <p className="font-medium">{ut.roadmap_tasks?.title || ut.custom_title}</p>
                   <p className="text-sm text-muted-foreground mt-1 line-clamp-1">{ut.roadmap_tasks?.description || 'Custom personal task'}</p>

@@ -55,8 +55,8 @@ export function CreateTaskButton() {
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="title" className="text-right">
+            <div className="flex flex-col sm:grid sm:grid-cols-4 sm:items-center gap-2 sm:gap-4">
+              <Label htmlFor="title" className="sm:text-right text-left">
                 Title
               </Label>
               <Input
@@ -64,7 +64,7 @@ export function CreateTaskButton() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 placeholder="e.g., Read a tech article"
-                className="col-span-3"
+                className="sm:col-span-3"
                 disabled={isLoading}
                 required
               />
