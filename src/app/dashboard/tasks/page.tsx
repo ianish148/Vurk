@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getTodaysTasks, getUpcomingTasks } from '@/app/actions/task-actions'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'

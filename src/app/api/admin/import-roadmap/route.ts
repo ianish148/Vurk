@@ -4,8 +4,6 @@ import { createClient as createSupabaseClient } from '@supabase/supabase-js'
 
 const ADMIN_EMAIL = 'anishff148@gmail.com'
 
-export const runtime = 'edge';
-
 export async function POST(request: Request) {
   try {
     const supabase = await createClient()

@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getDashboard } from '@/app/actions/task-actions'
 import { Card, CardContent } from '@/components/ui/card'
 import { Trophy, Flame, Coins, CheckCircle2, UserCircle2, ArrowRight, TrendingUp } from 'lucide-react'

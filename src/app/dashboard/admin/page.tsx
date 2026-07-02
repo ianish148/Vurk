@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { ImportRoadmapForm } from './import-roadmap-form'
 

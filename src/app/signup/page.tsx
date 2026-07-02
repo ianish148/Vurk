@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { signup, signInWithOAuth } from '@/app/login/actions'
 import Link from 'next/link'
 

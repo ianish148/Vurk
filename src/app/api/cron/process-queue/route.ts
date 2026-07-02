@@ -2,8 +2,6 @@ import { NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 import { aiClient } from '@/lib/plugins/ai'
 
-export const runtime = 'edge';
-
 export async function GET(request: Request) {
   // Use Service Role to bypass RLS for background processing
   const supabase = createClient(
