@@ -48,7 +48,10 @@ export async function signup(formData: FormData) {
 
 export async function signInWithOAuth(provider: 'google' | 'github') {
   const supabase = await createClient()
-  const origin = (await headers()).get('origin') || 'http://localhost:3000'
+  const headersList = await headers()
+  const host = headersList.get('x-forwarded-host') || headersList.get('host')
+  const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https'
+  const origin = host ? `${protocol}://${host}` : 'http://localhost:3000'
 
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider,
