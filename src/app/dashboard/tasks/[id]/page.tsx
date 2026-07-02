@@ -25,7 +25,16 @@ export default async function TaskDetailPage({ params }: { params: Promise<{ id:
     return <div>Task not found</div>
   }
 
-  const task = ut.roadmap_tasks
+  const task = ut.roadmap_tasks || {
+    title: ut.custom_title || 'Custom Task',
+    description: 'Custom personal task',
+    difficulty: 'easy',
+    requires_ai_verification: false,
+    estimated_time_minutes: 0,
+    xp_reward: ut.custom_xp || 5,
+    coin_reward: 0,
+    submission_req: 'none'
+  }
 
   return (
     <div className="space-y-6 max-w-4xl">

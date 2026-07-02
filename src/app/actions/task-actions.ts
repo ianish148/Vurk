@@ -70,8 +70,8 @@ export async function submitTask(userTaskId: string, payload: any) {
 
   if (nextStatus === 'completed') {
     // 3. Use Atomic RPC to verify task, award XP/Coins, and log activity
-    const xpReward = userTask.roadmap_tasks?.xp_reward || 0
-    const coinReward = userTask.roadmap_tasks?.coin_reward || 0
+    const xpReward = userTask.roadmap_tasks?.xp_reward ?? userTask.custom_xp ?? 0
+    const coinReward = userTask.roadmap_tasks?.coin_reward ?? 0
     
     const { error: rpcErr } = await supabase.rpc('complete_task_transaction', {
       p_user_task_id: userTaskId,
@@ -227,5 +227,35 @@ export async function repairStreak(userId: string) {
 
   revalidatePath('/dashboard')
   revalidatePath('/dashboard/settings')
+  revalidatePath('/dashboard/settings')
   return { success: true }
+}
+
+export async function createCustomTask(title: string) {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) throw new Error('Unauthorized')
+
+  const today = new Date().toISOString().split('T')[0]
+
+  const { data, error } = await supabase
+    .from('user_tasks')
+    .insert({
+      user_id: user.id,
+      status: 'available',
+      assigned_date: today,
+      due_date: today,
+      custom_title: title,
+      custom_xp: 5
+    })
+    .select()
+    .single()
+
+  if (error) {
+    throw new Error(error.message)
+  }
+
+  revalidatePath('/dashboard/tasks')
+  revalidatePath('/dashboard')
+  return { success: true, task: data }
 }

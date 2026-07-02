@@ -123,12 +123,12 @@ export default async function DashboardPage() {
                                 </div>
                               )}
                               <div className="truncate">
-                                <p className={`font-semibold text-sm truncate ${isCompleted ? 'line-through text-muted-foreground' : ''}`}>{t.roadmap_tasks.title}</p>
-                                <p className="text-[10px] text-muted-foreground truncate">{t.roadmap_tasks.estimated_time_minutes} mins</p>
+                                <p className={`font-semibold text-sm truncate ${isCompleted ? 'line-through text-muted-foreground' : ''}`}>{t.roadmap_tasks?.title || t.custom_title}</p>
+                                <p className="text-[10px] text-muted-foreground truncate">{t.roadmap_tasks?.estimated_time_minutes || 0} mins</p>
                               </div>
                             </div>
                             <div className={`text-[10px] font-bold px-2 py-1 rounded-md whitespace-nowrap ml-2 ${isCompleted ? 'bg-green-500/10 text-green-600 dark:text-green-400' : 'bg-primary/10 text-primary'}`}>
-                              +{t.roadmap_tasks.xp_reward} XP
+                              +{t.roadmap_tasks?.xp_reward || t.custom_xp || 5} XP
                             </div>
                           </CardContent>
                         </Card>
