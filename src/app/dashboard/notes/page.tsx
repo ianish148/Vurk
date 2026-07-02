@@ -33,35 +33,11 @@ export default async function NotesPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <BookOpen className="h-5 w-5 text-indigo-500" />
-              Platform Guides
+              Study Materials
             </CardTitle>
             <CardDescription>Official resources to help you succeed</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <Link href="#" className="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 border border-transparent hover:border-white/10 transition-all">
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-indigo-500/20 rounded-md text-indigo-400 group-hover:scale-110 transition-transform">
-                  <FileEdit className="h-4 w-4" />
-                </div>
-                <div>
-                  <p className="font-medium text-sm">How to submit Proof of Work</p>
-                  <p className="text-xs text-muted-foreground">Learn what our AI expects for verification.</p>
-                </div>
-              </div>
-              <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-            </Link>
-            <Link href="#" className="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 border border-transparent hover:border-white/10 transition-all">
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-purple-500/20 rounded-md text-purple-400 group-hover:scale-110 transition-transform">
-                  <Trophy className="h-4 w-4" />
-                </div>
-                <div>
-                  <p className="font-medium text-sm">XP and Coins Guide</p>
-                  <p className="text-xs text-muted-foreground">Maximize your daily earnings.</p>
-                </div>
-              </div>
-              <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-            </Link>
             <Link href="/Genki1N5.pdf" target="_blank" className="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 border border-transparent hover:border-white/10 transition-all">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-green-500/20 rounded-md text-green-400 group-hover:scale-110 transition-transform">
