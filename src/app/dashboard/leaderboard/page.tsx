@@ -56,8 +56,8 @@ export default async function LeaderboardPage() {
                 {/* Rank */}
                 <div className="w-12 flex justify-center items-center font-bold">
                   {rank === 1 ? <Crown className="h-6 w-6 text-yellow-500 drop-shadow-sm" /> :
-                   rank === 2 ? <Medal className="h-6 w-6 text-gray-400 drop-shadow-sm" /> :
-                   rank === 3 ? <Medal className="h-6 w-6 text-amber-700 drop-shadow-sm" /> :
+                   rank === 2 ? <span className="text-xl font-bold text-gray-400 drop-shadow-sm">2</span> :
+                   rank === 3 ? <span className="text-xl font-bold text-amber-700 drop-shadow-sm">3</span> :
                    <span className="text-muted-foreground">{rank}</span>}
                 </div>
 

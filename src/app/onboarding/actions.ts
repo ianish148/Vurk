@@ -24,6 +24,7 @@ export async function completeOnboarding(data: any) {
       timezone: data.timezone,
       college: data.college,
       branch: data.branch,
+      year_of_study: data.year_of_study,
       semester: data.semester,
       graduation_year: data.graduation_year,
       current_cgpa: data.current_cgpa,

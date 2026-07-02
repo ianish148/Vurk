@@ -16,17 +16,18 @@ const schema = z.object({
   username: z.string().min(3, "Username must be at least 3 characters").max(20),
   full_name: z.string().min(2, "Name is required"),
   age: z.coerce.number().min(10).max(100),
-  country: z.string().min(2, "Country is required"),
+  country: z.string().optional(),
   timezone: z.string().optional(),
   
   college: z.string().min(2, "College is required"),
-  branch: z.string().min(2, "Branch/Major is required"),
-  semester: z.coerce.number().min(1).max(10),
-  graduation_year: z.coerce.number().min(2024).max(2030),
-  current_cgpa: z.coerce.number().min(0).max(10),
-  target_cgpa: z.coerce.number().min(0).max(10),
+  branch: z.string().min(2, "Course is required"),
+  year_of_study: z.string().min(1, "Year is required"),
+  semester: z.coerce.number().optional(),
+  graduation_year: z.coerce.number().optional(),
+  current_cgpa: z.coerce.number().optional(),
+  target_cgpa: z.coerce.number().optional(),
 
-  career_goal: z.string().min(2, "Career goal is required"),
+  career_goal: z.string().optional(),
   interests: z.string().optional(), // Will split by comma
   japanese_level: z.string().optional(),
   programming_languages: z.string().optional(), // Will split by comma
@@ -52,9 +53,9 @@ export function OnboardingWizard({ userId, email }: { userId: string, email: str
 
   const handleNext = async () => {
     let fieldsToValidate: any[] = []
-    if (step === 1) fieldsToValidate = ['username', 'full_name', 'age', 'country']
-    if (step === 2) fieldsToValidate = ['college', 'branch', 'semester', 'graduation_year', 'current_cgpa', 'target_cgpa']
-    if (step === 3) fieldsToValidate = ['career_goal']
+    if (step === 1) fieldsToValidate = ['username', 'full_name', 'age']
+    if (step === 2) fieldsToValidate = ['college', 'branch', 'year_of_study']
+    if (step === 3) fieldsToValidate = []
 
     const isStepValid = await trigger(fieldsToValidate)
     if (isStepValid) {
@@ -127,7 +128,7 @@ export function OnboardingWizard({ userId, email }: { userId: string, email: str
                     {errors.age && <p className="text-xs text-red-500">{errors.age.message}</p>}
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="country">Country</Label>
+                    <Label htmlFor="country">Country (Optional)</Label>
                     <Input id="country" placeholder="USA" {...register('country')} />
                     {errors.country && <p className="text-xs text-red-500">{errors.country.message}</p>}
                   </div>
@@ -149,30 +150,35 @@ export function OnboardingWizard({ userId, email }: { userId: string, email: str
                   {errors.college && <p className="text-xs text-red-500">{errors.college.message}</p>}
                 </div>
                 <div className="grid gap-2">
-                  <Label htmlFor="branch">Branch/Major</Label>
+                  <Label htmlFor="branch">Course</Label>
                   <Input id="branch" placeholder="Computer Science" {...register('branch')} />
                   {errors.branch && <p className="text-xs text-red-500">{errors.branch.message}</p>}
                 </div>
+                <div className="grid gap-2">
+                  <Label htmlFor="year_of_study">Year</Label>
+                  <Input id="year_of_study" placeholder="e.g. 1st Year, 2nd Year" {...register('year_of_study')} />
+                  {errors.year_of_study && <p className="text-xs text-red-500">{errors.year_of_study.message}</p>}
+                </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="grid gap-2">
-                    <Label htmlFor="semester">Current Semester</Label>
+                    <Label htmlFor="semester">Current Semester (Optional)</Label>
                     <Input id="semester" type="number" {...register('semester')} />
                     {errors.semester && <p className="text-xs text-red-500">{errors.semester.message}</p>}
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="graduation_year">Grad Year</Label>
+                    <Label htmlFor="graduation_year">Grad Year (Optional)</Label>
                     <Input id="graduation_year" type="number" {...register('graduation_year')} />
                     {errors.graduation_year && <p className="text-xs text-red-500">{errors.graduation_year.message}</p>}
                   </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="grid gap-2">
-                    <Label htmlFor="current_cgpa">Current CGPA</Label>
+                    <Label htmlFor="current_cgpa">Current CGPA (Optional)</Label>
                     <Input id="current_cgpa" type="number" step="0.01" {...register('current_cgpa')} />
                     {errors.current_cgpa && <p className="text-xs text-red-500">{errors.current_cgpa.message}</p>}
                   </div>
                   <div className="grid gap-2">
-                    <Label htmlFor="target_cgpa">Target CGPA</Label>
+                    <Label htmlFor="target_cgpa">Target CGPA (Optional)</Label>
                     <Input id="target_cgpa" type="number" step="0.01" {...register('target_cgpa')} />
                     {errors.target_cgpa && <p className="text-xs text-red-500">{errors.target_cgpa.message}</p>}
                   </div>
@@ -189,7 +195,7 @@ export function OnboardingWizard({ userId, email }: { userId: string, email: str
                 className="flex flex-col gap-4 absolute w-full"
               >
                 <div className="grid gap-2">
-                  <Label htmlFor="career_goal">Career Goal</Label>
+                  <Label htmlFor="career_goal">Career Goal (Optional)</Label>
                   <Input id="career_goal" placeholder="Software Engineer at FAANG" {...register('career_goal')} />
                   {errors.career_goal && <p className="text-xs text-red-500">{errors.career_goal.message}</p>}
                 </div>
