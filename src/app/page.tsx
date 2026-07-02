@@ -1,6 +1,7 @@
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
+import { FAQSection } from '@/components/faq-section'
 
 export default async function Home() {
   const supabase = await createClient()
@@ -95,20 +96,29 @@ export default async function Home() {
         </section>
       </main>
 
+      {/* FAQ Section */}
+      <FAQSection />
+
       {/* Footer */}
-      <footer className="border-t border-border py-10 px-6 mt-16">
+      <footer className="border-t border-border py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <img src="/logo.png" alt="Vurk Logo" className="h-4 w-auto object-contain opacity-70 grayscale dark:hidden" />
             <img src="/logo-dark.png" alt="Vurk Logo" className="h-4 w-auto object-contain opacity-70 grayscale hidden dark:block" />
             <span className="text-sm text-muted-foreground">© {new Date().getFullYear()} Vurk Inc.</span>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 flex-wrap justify-center md:justify-end">
+            <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded">
+              About Us
+            </Link>
+            <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded">
+              Contact Us
+            </Link>
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded">
               Privacy Policy
             </Link>
             <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded">
-              Terms of Service
+              Terms & Conditions
             </Link>
           </div>
         </div>
