@@ -1,6 +1,6 @@
 import { createClient } from '@/utils/supabase/server'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
-import { FileEdit, BookOpen, ExternalLink, Inbox } from 'lucide-react'
+import { FileEdit, BookOpen, ExternalLink, Inbox, FileText } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
@@ -58,6 +58,18 @@ export default async function NotesPage() {
                 <div>
                   <p className="font-medium text-sm">XP and Coins Guide</p>
                   <p className="text-xs text-muted-foreground">Maximize your daily earnings.</p>
+                </div>
+              </div>
+              <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+            <Link href="/Genki1N5.pdf" target="_blank" className="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 border border-transparent hover:border-white/10 transition-all">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-green-500/20 rounded-md text-green-400 group-hover:scale-110 transition-transform">
+                  <FileText className="h-4 w-4" />
+                </div>
+                <div>
+                  <p className="font-medium text-sm">Genki I - N5 Vocabulary</p>
+                  <p className="text-xs text-muted-foreground">Japanese language study material (PDF).</p>
                 </div>
               </div>
               <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
