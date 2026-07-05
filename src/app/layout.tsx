@@ -10,6 +10,7 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://vurk.in'),
   title: "Vurk - AI Accountability Platform",
   description: "Stay accountable to your goals with Vurk.",
   icons: {
