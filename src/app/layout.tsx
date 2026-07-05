@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://vurk.in'),
   title: "Vurk - AI Accountability Platform",
   description: "Stay accountable to your goals with Vurk.",
+  alternates: {
+    canonical: './',
+  },
   icons: {
     icon: [
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
